@@ -22,8 +22,21 @@
       }
     }
       class Grade extends Student{
-
+      constructor(name, grade) {
+      super(name);
+      this.studentGrade = grade;
       }
+      show() {
+      return this.present() + ', from '
+       this.studentGrade;
+      }
+      let myStudent = new Grade("Tina", "grade 6");
+      document.getElementById("details").innerHTML
+      myStudent.show();
+      }
+      // hello() is a static method can not be accessed by object myStudent 
+      document.getElementById("greetings").innerHTML = 
+      Student.hello();
     </script>
   </body>
 </html>
